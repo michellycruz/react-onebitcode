@@ -1,0 +1,1 @@
+export const Subtitle = () => <h2>É fácil igual 1 + 1 é {(1 + 1)}</h2>
