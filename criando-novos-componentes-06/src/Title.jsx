@@ -1,4 +1,4 @@
-export default function Title(){
+export default function Title() {
     const tech = "React"
-    return <h1>{tech} é incrível</h1>
+    return <h1>{tech} is awesome!</h1>
 }

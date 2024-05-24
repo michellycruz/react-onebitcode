@@ -1,13 +1,14 @@
-import Title from "./Title"
+import StatusText from "./StatusText"
 import Subtitle from "./Subtitle"
+import Title from "./Title"
 
-export default function App(){
-    const status = false
-    return(
-        <div>
-            <Title />
-            <Subtitle />
-            <h2>Status atual: {status ? "ON" : "OFF"}</h2>
-        </div>
+  export default function App() {
+  
+    return (
+      <div>
+        <Title />
+        <Subtitle />
+        <StatusText />
+      </div>
     )
-}
+  }

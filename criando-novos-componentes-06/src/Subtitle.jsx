@@ -1,1 +1,4 @@
-export const Subtitle = () => <h2>É fácil igual 1 + 1 é {(1 + 1)}</h2>
+/* eslint-disable react/no-unescaped-entities */
+const Subtitle = () => <h2>It's easy, like 1 + 1 is {1 + 1}</h2>
+
+export default Subtitle
