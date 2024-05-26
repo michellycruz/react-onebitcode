@@ -1,19 +1,12 @@
 import StatusText from "./components/StatusText"
 import Subtitle from "./components/Subtitle"
 import Title from "./components/Title"
+import styles from "./App.module.css"
 
   export default function App() {
   
     return (
-      <div
-        style={{
-            backgroundColor:"#2c2c2d",
-            display: "grid",
-            minHeight: "100vh",
-            placeContent: "center",
-            textAlign: "center"
-          }}
-      >
+      <div className={styles.app}>
         <Title />
         <Subtitle />
         <StatusText />
