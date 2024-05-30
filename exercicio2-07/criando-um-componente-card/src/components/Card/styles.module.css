@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    background-color: #d7e1e7;
+    border-radius: 1rem;
+    gap: 4rem;
+    height: 30rem;
+    width: 50rem;
+    margin: 2rem auto;
+    padding: 4rem;
+}
+
+.poster{
+    border: 8px solid black;
+    box-shadow: 0 24px 32px -16px rgba(0, 0, 0, 0.384);
+}
+
+
+.titulo{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.paragrafo{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 35px 0px;
+}
+
+.btn{
+    padding: .75em 1.25em;
+    border-radius: .5rem;
+    border: none;
+    background-color: #121212;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.212);
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    margin-left: .5rem;
+}
