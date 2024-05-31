@@ -2,9 +2,15 @@ import Card from "./components/Card"
 
 function App() {
   return (
-      <div className="app">
+      <>
          <Card />
-      </div>
+         <Card />
+         <Card />
+         <Card />
+         <Card />
+         <Card />
+         <Card />
+      </> // <-- abreviação da tag <fragment></fragment>
   )
 }
 
