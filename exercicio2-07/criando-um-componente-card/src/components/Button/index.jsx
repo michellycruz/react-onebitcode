@@ -1,4 +1,4 @@
-import styles from "../Card/styles.module.css"
+import styles from "./styles.module.css"
 
 export default function Button(){
     return (
