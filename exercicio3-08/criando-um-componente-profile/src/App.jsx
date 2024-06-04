@@ -1,10 +1,11 @@
-import Profile from "./components/Profile"
+import Profile from "./components/Profile/index.jsx"
 import imgMich from "./assets/michelly2.jpg"
+
 
 function App() {
   return (
     <div> 
-      <Profile
+      <Profile 
         avatar = {imgMich}
         name = "Michelly Cruz de Souza"
         bio = "Front-end Developer | UX UI Designer"
@@ -17,5 +18,5 @@ function App() {
     </div>
   )
 }
-
+ 
 export default App
