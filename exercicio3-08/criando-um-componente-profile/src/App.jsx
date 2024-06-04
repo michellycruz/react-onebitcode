@@ -1,8 +1,7 @@
-import Profile from "./components/Profile/index.jsx"
+import Profile from "./components/Profile"
 import imgMich from "./assets/michelly2.jpg"
 
-
-function App() {
+export default function App() {
   return (
     <div> 
       <Profile 
@@ -19,4 +18,3 @@ function App() {
   )
 }
  
-export default App
