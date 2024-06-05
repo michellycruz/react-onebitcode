@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unknown-property */
 import Profile from "./components/Profile"
 import imgMich from "./assets/michelly2.jpg"
 
 export default function App() {
   return (
-    <div> 
+    <div class="app"> 
       <Profile 
         avatar = {imgMich}
         name = "Michelly Cruz de Souza"
@@ -17,4 +18,3 @@ export default function App() {
     </div>
   )
 }
- 
