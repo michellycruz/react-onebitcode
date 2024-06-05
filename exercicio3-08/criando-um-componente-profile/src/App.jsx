@@ -5,7 +5,7 @@ import imgMich from "./assets/michelly2.jpg"
 export default function App() {
   return (
     <div class="app"> 
-      <Profile 
+      <Profile
         avatar = {imgMich}
         name = "Michelly Cruz de Souza"
         bio = "Front-end Developer | UX UI Designer"
