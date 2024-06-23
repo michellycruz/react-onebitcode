@@ -5,3 +5,4 @@ export default function Title(props) {
         <h2 className={styles.wrapper}>{props.text}</h2>
     )
 }
+// 5:45 aula 21
