@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
+import Title from "../Title"
 import styles from "./style.module.css"
 
 export default function Profile (props){
     return (
         <div className={styles.container}>
             <img className={styles.avatar} src={props.avatar} alt={props.name} />
-            <h2 className={styles.name}>{props.name}</h2>
+            <Title text={props.name} />
             <div>{props.bio}</div>
             <div >{props.tel}</div>
             <div>{props.email}</div>

@@ -13,11 +13,7 @@
     box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.5);
     margin: 2rem 0 1rem;
   }
-
-  .container > h2 {
-    margin: 1rem;
-  }
-  
+    
   .container>div {
     border-top: solid 1px rgb(66, 140, 209);
     padding: 1rem 2.5rem;
