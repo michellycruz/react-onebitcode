@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./styles.module.css"
 
 export default function Title(props) {
@@ -5,4 +6,4 @@ export default function Title(props) {
         <h2 className={styles.wrapper}>{props.text}</h2>
     )
 }
-// 5:45 aula 21
+
