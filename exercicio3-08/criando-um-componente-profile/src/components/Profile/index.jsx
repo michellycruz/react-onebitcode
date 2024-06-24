@@ -6,7 +6,10 @@ export default function Profile (props){
     return (
         <div className={styles.container}>
             <img className={styles.avatar} src={props.avatar} alt={props.name} />
-            <Title text={props.name} />
+            <Title>
+                <span>{props.name}</span>
+                <button>Follow</button>
+            </Title>
             <div>{props.bio}</div>
             <div >{props.tel}</div>
             <div>{props.email}</div>
