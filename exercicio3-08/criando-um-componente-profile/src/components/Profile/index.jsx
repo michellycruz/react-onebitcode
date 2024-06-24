@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
+import LinkButton from "../LinkButton"
 import Title from "../Title"
+import ProfileSection from "./ProfileSection"
 import styles from "./style.module.css"
 
 export default function Profile (props){
@@ -10,14 +12,16 @@ export default function Profile (props){
                 <span>{props.name}</span>
                 <button>Follow</button>
             </Title>
-            <div>{props.bio}</div>
-            <div >{props.tel}</div>
-            <div>{props.email}</div>
-            <div className={styles.link}>
-                <a href={props.githubUrl} target="_blank">GitHub</a>
-                <a href={props.linkedinUrl} target="_blank">Linkedin</a>
-                <a href={props.instagramUrl} target="_blank">Instagram</a>
-            </div>
+            <ProfileSection>{props.bio}</ProfileSection>
+            <ProfileSection>{props.tel}</ProfileSection>
+            <ProfileSection>{props.email}</ProfileSection>
+            <ProfileSection>
+                <div className={styles.link}>
+                    <LinkButton href={props.githubUrl}>GitHub</LinkButton>
+                    <LinkButton href={props.linkedinUrl}>Linkedin</LinkButton>
+                    <LinkButton href={props.instagramUrl}>Instagram</LinkButton>
+                </div>
+            </ProfileSection>
         </div>
     ) 
     
