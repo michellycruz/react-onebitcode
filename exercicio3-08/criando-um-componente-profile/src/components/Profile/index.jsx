@@ -4,13 +4,23 @@ import Title from "../Title"
 import ProfileSection from "./ProfileSection"
 import styles from "./style.module.css"
 
+function handleClick(ev) {
+    alert("Você agora está seguindo!")
+    console.log(ev)
+}
+
 export default function Profile (props){
     return (
         <div className={styles.container}>
             <img className={styles.avatar} src={props.avatar} alt={props.name} />
             <Title>
                 <span>{props.name}</span>
-                <button>Follow</button>
+                <button
+                    className={styles.followButton}
+                    onClick={handleClick}
+                >
+                    Follow
+                </button>
             </Title>
             <ProfileSection>{props.bio}</ProfileSection>
             <ProfileSection>{props.tel}</ProfileSection>
