@@ -7,7 +7,7 @@ import styles from "./style.module.css"
 
 
 export default function Profile (props){
-    
+
     const state = useState("Follow")
     
     function handleClick (ev){
@@ -26,6 +26,7 @@ export default function Profile (props){
                     className={styles.followButton}
                     onClick={handleClick}
                 >
+                    {state [0]}
                     {followButtonText}
                 </button>
             </Title>
