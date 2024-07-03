@@ -1,15 +1,22 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react"
 import LinkButton from "../LinkButton"
 import Title from "../Title"
 import ProfileSection from "./ProfileSection"
 import styles from "./style.module.css"
 
-function handleClick(ev) {
-    alert("Você agora está seguindo!")
-    console.log(ev)
-}
 
 export default function Profile (props){
+    
+    const state = useState("Follow")
+    
+    function handleClick (ev){
+        alert("Você agora está seguindo!")
+        followButtonText = "Following"
+        console.log({followButtonText})
+    }
+    
+    
     return (
         <div className={styles.container}>
             <img className={styles.avatar} src={props.avatar} alt={props.name} />
@@ -19,7 +26,7 @@ export default function Profile (props){
                     className={styles.followButton}
                     onClick={handleClick}
                 >
-                    Follow
+                    {followButtonText}
                 </button>
             </Title>
             <ProfileSection>{props.bio}</ProfileSection>

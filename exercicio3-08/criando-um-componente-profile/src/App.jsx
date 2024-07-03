@@ -4,7 +4,7 @@ import imgMich from "./assets/michelly2.jpg"
 
 export default function App() {
   return (
-    <div class="app"> 
+    <div className="app"> 
       <Profile
         avatar = {imgMich}
         name = "Michelly Cruz de Souza"
