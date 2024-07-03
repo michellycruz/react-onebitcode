@@ -10,7 +10,7 @@ export default function Profile (props){
 //[variável, função de modifica a variável]
     const [followText, setFollowText] = useState("Follow")
     
-    function handleClick (ev){
+    function handleClick (){
         alert("Você agora está seguindo!")
         setFollowText("Following")
     }
