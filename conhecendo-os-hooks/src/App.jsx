@@ -1,9 +1,11 @@
-
 import './App.css'
-import useCounter from './hooks/useCounter'
+import useCounter from './hooks/useCounter.js'
+
+// Regra 1: Onde usar os hooks
+// Regra 2: A ordem dos hooks
 
 function App() {
-  const counter = useCounter
+  const counter = useCounter()
 
   return (
     <>
