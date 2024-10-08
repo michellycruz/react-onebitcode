@@ -7,7 +7,7 @@ import styles from "./style.module.css"
 
 
 export default function Profile (props){
-//[variável, função de modifica a variável]
+//[variável, função de modificar a variável]
     const [followText, setFollowText] = useState("Follow")
     
     function handleClick (){
